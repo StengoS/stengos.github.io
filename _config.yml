@@ -22,7 +22,7 @@ repository               : "stengos/stengos.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "pfp_everything.PNG"
+  avatar           : "pfp_everything_v2.PNG"
   name             : "Steven Ngo"
   pronouns         : "he/him/his" 
   bio              : "Software Engineering Ph.D. Student @ UC Irvine, Informatics Dept"
