@@ -19,12 +19,15 @@ main:
         
   # - title: "Blog Posts"
   #   url: /year-archive/
-    
-  - title: "CV"
-    url: /files/CV - Steven Ngo v5-2.pdf
 
   - title: "About Me"
     url: /about-me/
+  
+  - title: "Research"
+    url: /research/
+    
+  - title: "CV"
+    url: /files/CV - Steven Ngo v5-2.pdf
     
   # - title: "Guide"
   #   url: /markdown/

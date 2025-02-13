@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "About Me"
-permalink: /aboutme/
+permalink: /about-me/
 ---
 ## Education
 * Ph.D. in Software Engineering, Informatics Department, University of California, Irvine (2023 - present)
