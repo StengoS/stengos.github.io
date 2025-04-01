@@ -44,10 +44,10 @@ I actively compete with [Cyber@UCI's Collegiate Cyber Defense Competition](https
 <br>
 
 Featured News Articles:
-- "[Securing the Future: ZotGPT and Cyber@UCI Unite to Fortify Generative AI Defenses]"(https://odit.uci.edu/news-media-mentions/features/cybersecurity-zotgpt-collab.php) (UCI Office of Data and Information Technology, Mar. 19, 2025)
-- "[UC Irvine’s Codesafe Platform Wins $50,000 in Global EdTech Competition]"(https://ics.uci.edu/2025/01/28/uc-irvines-codesafe-platform-wins-50000-in-global-edtech-competition/) (UCI Donald Bren School of Information & Computer Sciences, Jan. 28, 2025)
-- - "[Cyber@UCI team places fourth in national cybersecurity competition]" (https://news.uci.edu/2024/07/01/cyberuci-team-places-fourth-in-national-cybersecurity-competition/) (UC Irvine News, Jul. 1, 2024)
-- "[UCI Advances to National Collegiate Cyber Defense Competition]"(https://ics.uci.edu/2024/04/18/uci-advances-to-national-collegiate-cyber-defense-competition/) (UCI Donald Bren School of Information & Computer Sciences, Apr. 18, 2024)
+- "[Securing the Future: ZotGPT and Cyber@UCI Unite to Fortify Generative AI Defenses](https://odit.uci.edu/news-media-mentions/features/cybersecurity-zotgpt-collab.php)" (UCI Office of Data and Information Technology, Mar. 19, 2025)
+- "[UC Irvine’s Codesafe Platform Wins $50,000 in Global EdTech Competition](https://ics.uci.edu/2025/01/28/uc-irvines-codesafe-platform-wins-50000-in-global-edtech-competition/)" (UCI Donald Bren School of Information & Computer Sciences, Jan. 28, 2025)
+- - "[Cyber@UCI team places fourth in national cybersecurity competition](https://news.uci.edu/2024/07/01/cyberuci-team-places-fourth-in-national-cybersecurity-competition/)" (UC Irvine News, Jul. 1, 2024)
+- "[UCI Advances to National Collegiate Cyber Defense Competition](https://ics.uci.edu/2024/04/18/uci-advances-to-national-collegiate-cyber-defense-competition/)" (UCI Donald Bren School of Information & Computer Sciences, Apr. 18, 2024)
 
 <br>
 <br>
