@@ -83,7 +83,7 @@ select {
   background-color: #fff;
   border: 1px solid mix(#fff, #000, 80%);
   border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  box-shadow: var(--global-box-shadow);
 
   &:hover {
     border-color: var(--global-base-color);

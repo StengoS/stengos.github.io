@@ -448,7 +448,7 @@ body:hover .visually-hidden button {
   background: #fff;
   border: 1px solid var(--global-border-color);
   border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  box-shadow: var(--global-box-shadow);
 
   &__title {
     margin: 0;

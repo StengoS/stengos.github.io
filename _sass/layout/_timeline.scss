@@ -1,0 +1,164 @@
+/* ==========================================================================
+   TIMELINE
+   (used for chronological lists like accomplishments or news items)
+   ========================================================================== */
+
+.timeline {
+  position: relative;
+  margin: 1.5em 0 2em;
+  padding: 0;
+  list-style: none;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0.4em;
+    bottom: 0.4em;
+    left: 5px;
+    width: 2px;
+    background: var(--global-border-color);
+  }
+}
+
+.timeline__item {
+  position: relative;
+  padding-left: 2em;
+  margin-bottom: 1.75em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.35em;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--global-bg-color);
+    border: 2px solid var(--global-link-color);
+  }
+}
+
+.timeline__item .timeline__date {
+  display: block;
+  margin-bottom: 0.25em;
+  color: var(--global-text-color-light);
+  font-family: $sans-serif-narrow;
+  font-size: $type-size-7;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.timeline__item .timeline__title {
+  margin: 0;
+  font-weight: 600;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.timeline__item .timeline__desc {
+  margin: 0.15em 0 0;
+  font-size: $type-size-7;
+  font-style: italic;
+}
+
+.timeline__item .timeline__meta {
+  margin: 0.15em 0 0;
+  color: var(--global-text-color-light);
+  font-size: $type-size-6;
+
+  a {
+    color: inherit;
+  }
+}
+
+
+/* ==========================================================================
+   RESULTS GRID
+   (medal-style cards for competition placements)
+   ========================================================================== */
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1em;
+  margin: 1.5em 0 2em;
+}
+
+.result-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85em;
+  padding: 1em 1.15em;
+  border: 1px solid var(--global-border-color);
+  border-left: 4px solid var(--global-border-color);
+  border-radius: $border-radius;
+  box-shadow: var(--global-box-shadow);
+  transition: $global-transition;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+  }
+
+  &--gold {
+    border-left-color: #eab308;
+  }
+
+  &--silver {
+    border-left-color: #94a3b8;
+  }
+
+  &--bronze {
+    border-left-color: #c2703d;
+  }
+}
+
+.result-card__badge {
+  flex: 0 0 auto;
+  font-size: 1.6em;
+  line-height: 1;
+}
+
+.result-card__rank {
+  margin: 0;
+  font-family: $sans-serif-narrow;
+  font-size: $type-size-7;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--global-text-color-light);
+}
+
+.result-card--gold .result-card__rank {
+  color: #a16207;
+}
+
+.result-card--silver .result-card__rank {
+  color: #64748b;
+}
+
+.result-card--bronze .result-card__rank {
+  color: #9a5433;
+}
+
+.result-card__event {
+  margin: 0.15em 0 0;
+  font-weight: 600;
+}
+
+.result-card__note {
+  margin: 0.25em 0 0;
+  font-size: $type-size-7;
+  color: var(--global-text-color-light);
+}

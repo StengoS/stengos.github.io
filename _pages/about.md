@@ -7,47 +7,58 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm a 2nd-year software engineering Ph.D. student at University of California, Irvine (UCI)'s [Informatics Department](https://www.informatics.uci.edu/). I am advised by [Dr. Joshua Garcia](https://jgarcia.ics.uci.edu/). 
+Hi! I'm a 4th-year software engineering Ph.D. student at University of California, Irvine (UCI)'s [Informatics Department](https://www.informatics.uci.edu/). I am advised by [Dr. Joshua Garcia](https://jgarcia.ics.uci.edu/). 
 
 <br>
 <br>
 
-My research interests include:
+## Research Interests
 - Software Security - threat modeling, secure software development, open-source software
 - CS Education - software engineering & security education, AI in education
 - AI & Security - AI red teaming
 
 <br>
 <br>
-
-Highlighted accomplishments/work:
-- Summer-Fall 2024: Security Research Engineer Intern @ Samsung Research America, Knox Security
-- Summer 2024: *A Deep Dive Into How Open-Source Project Maintainers Review and Resolve Bug Bounty Reports* accepted at IEEE Security & Privacy '25 (as a second author)
-- Summer 2024: *Codesafe: Scenario-Driven Software Engineering and Security Education Platform* is 1 of 6 proposals selected for the Catalyst Award ($50,000) for the DARPA + Tools Competition '24 Building an Adaptive and Competitive Workforce Competition (first author)
-  - See [here](https://ics.uci.edu/2025/01/28/uc-irvines-codesafe-platform-wins-50000-in-global-edtech-competition/) for the article featured in UCI ICS Communications.
-
-Here's my [CV](/files/CV - Steven Ngo v5-2.pdf).
-
-<br>
-<br>
 <br>
 
-I actively compete with [Cyber@UCI's Collegiate Cyber Defense Competition](https://cyberuci.com/competition) (CCDC) team as the corporate subteam lead for the '24-'25 season (corporate subteam member in the '23-'24 season). We compete in Western Regional CCDC (WRCCDC). Accomplishments include:
-- **1st place** at WRCCDC '25 Regionals --> Advancement to CCDC Nationals!
-- **1st place** at WRCCDC '25 Qualifiers 
-- **4th place** at National CCDC '24 Nationals
-- **2nd place** at WRCCDC '24 Regionals, **1st place** at National CCDC '24 Wildcard
-- **3rd place** in WRCCDC '24 Qualifiers
+## Recent Highlights
+
+<ul class="timeline">
+  <li class="timeline__item">
+    <span class="timeline__date">Mar. 19, 2025</span>
+    <p class="timeline__title"><a href="https://www.oit.uci.edu/2025/03/19/cybersecurity-zotgpt-collab/">Securing the Future: ZotGPT and Cyber@UCI Unite to Fortify Generative AI Defenses</a></p>
+    <p class="timeline__desc">Set up and facilitated this collaboration, managing the student team and keeping UCI OIT updated throughout.</p>
+    <p class="timeline__meta">UCI Office of Data and Information Technology</p>
+  </li>
+  <li class="timeline__item">
+    <span class="timeline__date">Jan. 28, 2025</span>
+    <p class="timeline__title"><a href="https://ics.uci.edu/2025/01/28/uc-irvines-codesafe-platform-wins-50000-in-global-edtech-competition/">UC Irvine's Codesafe Platform Wins $50,000 in Global EdTech Competition</a></p>
+    <p class="timeline__desc">Led development of Codesafe as first author, winning the DARPA + Tools Catalyst Award.</p>
+    <p class="timeline__meta">UCI Donald Bren School of Information &amp; Computer Sciences</p>
+  </li>
+  <li class="timeline__item">
+    <span class="timeline__date">Jul. 1, 2024</span>
+    <p class="timeline__title"><a href="https://news.uci.edu/2024/07/01/cyberuci-team-places-fourth-in-national-cybersecurity-competition/">Cyber@UCI team places fourth in national cybersecurity competition</a></p>
+    <p class="timeline__desc">Competed as a member of Cyber@UCI's CCDC team at National CCDC Nationals.</p>
+    <p class="timeline__meta">UC Irvine News</p>
+  </li>
+  <li class="timeline__item">
+    <span class="timeline__date">Apr. 18, 2024</span>
+    <p class="timeline__title"><a href="https://ics.uci.edu/2024/04/18/uci-advances-to-national-collegiate-cyber-defense-competition/">UCI Advances to National Collegiate Cyber Defense Competition</a></p>
+    <p class="timeline__desc">Competed as a member of Cyber@UCI's CCDC team in the WRCCDC Regionals that earned this advancement.</p>
+    <p class="timeline__meta">UCI Donald Bren School of Information &amp; Computer Sciences</p>
+  </li>
+</ul>
 
 <br>
-<br>
-<br>
 
-Featured News Articles:
-- "[Securing the Future: ZotGPT and Cyber@UCI Unite to Fortify Generative AI Defenses](https://odit.uci.edu/news-media-mentions/features/cybersecurity-zotgpt-collab.php)" (UCI Office of Data and Information Technology, Mar. 19, 2025)
-- "[UC Irvine’s Codesafe Platform Wins $50,000 in Global EdTech Competition](https://ics.uci.edu/2025/01/28/uc-irvines-codesafe-platform-wins-50000-in-global-edtech-competition/)" (UCI Donald Bren School of Information & Computer Sciences, Jan. 28, 2025)
-- - "[Cyber@UCI team places fourth in national cybersecurity competition](https://news.uci.edu/2024/07/01/cyberuci-team-places-fourth-in-national-cybersecurity-competition/)" (UC Irvine News, Jul. 1, 2024)
-- "[UCI Advances to National Collegiate Cyber Defense Competition](https://ics.uci.edu/2024/04/18/uci-advances-to-national-collegiate-cyber-defense-competition/)" (UCI Donald Bren School of Information & Computer Sciences, Apr. 18, 2024)
+## Selected Publications
+
+{% for post in site.publications reversed limit:3 %}
+  {% include archive-single.html %}
+{% endfor %}
+
+*See all [publications](/publications/).*
 
 <br>
 <br>
@@ -56,5 +67,4 @@ I may not always be available for collaboration, but please don't hesitate to re
 
 
 
-*This site was last updated Apr. 1, 2025.*
 *If you'd like more up-to-date information on my profile, please contact [skngo1@uci.edu](mailto:skngo1@uci.edu).*

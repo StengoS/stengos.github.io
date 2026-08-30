@@ -68,6 +68,7 @@ audio:not([controls]) {
 
 a {
   color: var(--global-link-color);
+  transition: color 0.15s ease-in-out;
 }
 
 /* Apply focus state */

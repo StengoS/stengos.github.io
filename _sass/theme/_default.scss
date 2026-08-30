@@ -1,24 +1,41 @@
 /* ==========================================================================
-   DEFAULT THEME
+   THEME (light + dark, switched at runtime via [data-theme] on <html>)
    ========================================================================== */
 
-/* Color codes used for the theme */
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
-$lighter-gray               : mix(#fff, $gray, 90%);
+/* Color codes used for the theme (slate neutrals) */
+$gray                       : #64748b;
+$dark-gray                  : #334155;
+$darker-gray                : #1e293b;
+$light-gray                 : #94a3b8;
+$lighter-gray               : #e2e8f0;
+
+/* Accent (teal) */
+$accent-color                : #0d9488;
+$accent-color-dark           : #0f766e;
+$accent-color-light          : #14b8a6;
+
+/* Dark-mode neutrals + accent */
+$dm-gray                    : #94a3b8;
+$dm-dark-gray                : #64748b;
+$dm-darker-gray              : #334155;
+$dm-light-gray               : #cbd5e1;
+$dm-background                : #0f172a;
+$dm-background-light          : #1e293b;
+$dm-background-lighter        : #334155;
+$dm-text                    : #e2e8f0;
+$dm-link                    : #2dd4bf;
+$dm-link-dark                : #14b8a6;
+$dm-link-light               : #5eead4;
 
 /* Color codes used for the site */
-$danger-color               : #ee5f5b;
-$info-color                 : #2f7f93;
-$notice-color               : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
+$danger-color               : #e11d48;
+$info-color                 : #0369a1;
+$notice-color               : #64748b;
+$success-color              : #16a34a;
+$warning-color              : #d97706;
 
 /* Other basic settings for the template */
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$border-radius              : 10px;
 $global-transition          : all 0.2s ease-in-out;
 $masthead-height            : 70px;
 $navicon-width              : 28px;
@@ -26,20 +43,42 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Default light theme for the site */
+/* Light theme (default) */
 :root {
-    --global-base-color                 : #{$gray};
+    --global-base-color                 : #{$accent-color};
     --global-bg-color                   : #fff;
     --global-border-color               : #{$lighter-gray};
-    --global-code-background-color      : #fafafa;
+    --global-code-background-color      : #f8fafc;
     --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #2f7f93;
-    --global-link-color-hover           : mix(#000, #2f7f93, 25%);
-    --global-link-color-visited         : mix(#fff, #2f7f93, 25%);  
+    --global-fig-caption-color          : #{$light-gray};
+    --global-link-color                 : #{$accent-color};
+    --global-link-color-hover           : #{$accent-color-dark};
+    --global-link-color-visited         : #{$accent-color-light};
     --global-masthead-link-color        : #{$dark-gray};
-    --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
-    --global-text-color                 : #{$dark-gray};
-    --global-text-color-light           : #{$light-gray};
-    --global-thead-color                : #{$lighter-gray};
+    --global-masthead-link-color-hover  : #{$accent-color};
+    --global-text-color                 : #{$darker-gray};
+    --global-text-color-light           : #{$gray};
+    --global-thead-color                : #f1f5f9;
+    --global-box-shadow                 : 0 1px 2px rgba(15, 23, 42, 0.06), 0 4px 10px rgba(15, 23, 42, 0.06);
+    --global-popover-shadow             : 0 4px 20px rgba(15, 23, 42, 0.15);
+}
+
+/* Dark theme, applied once JS resolves the effective theme (stored choice or OS preference) */
+:root[data-theme="dark"] {
+    --global-base-color                 : #{$dm-link};
+    --global-bg-color                   : #{$dm-background};
+    --global-border-color               : #{$dm-background-light};
+    --global-code-background-color      : #{$dm-background-light};
+    --global-code-text-color            : #{$dm-text};
+    --global-fig-caption-color          : #{$dm-dark-gray};
+    --global-link-color                 : #{$dm-link};
+    --global-link-color-hover           : #{$dm-link-dark};
+    --global-link-color-visited         : #{$dm-link-light};
+    --global-masthead-link-color        : #{$dm-text};
+    --global-masthead-link-color-hover  : #{$dm-link};
+    --global-text-color                 : #{$dm-text};
+    --global-text-color-light           : #{$dm-light-gray};
+    --global-thead-color                : #{$dm-background-lighter};
+    --global-box-shadow                 : 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.3);
+    --global-popover-shadow             : 0 4px 24px rgba(0, 0, 0, 0.5);
 }
