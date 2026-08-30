@@ -84,6 +84,49 @@
 
 
 /* ==========================================================================
+   PUB LIST
+   (used for compact publication listings, styled like the timeline)
+   ========================================================================== */
+
+.pub-list {
+  margin: 1.5em 0 2em;
+  padding: 0;
+  list-style: none;
+}
+
+.pub-list__item {
+  margin-bottom: 1.75em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pub-list__item .pub-list__title {
+  margin: 0;
+  font-weight: 600;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.pub-list__item .pub-list__meta {
+  margin: 0.15em 0 0;
+  color: var(--global-text-color-light);
+  font-size: $type-size-6;
+
+  a {
+    color: inherit;
+  }
+}
+
+
+/* ==========================================================================
    RESULTS GRID
    (medal-style cards for competition placements)
    ========================================================================== */

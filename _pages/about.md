@@ -25,6 +25,18 @@ Hi! I'm a 4th-year software engineering Ph.D. student at University of Californi
 
 <ul class="timeline">
   <li class="timeline__item">
+    <span class="timeline__date">Aug. 7, 2026</span>
+    <p class="timeline__title"><a href="https://info.defcon.org/defcon34/content/68125">Student-Run Cyber Clubs - Why They Matter &amp; Digital Playgrounds</a></p>
+    <p class="timeline__desc">Gave a presentation on cyber clubs at DEFCON 34 to the .EDU Community.</p>
+    <p class="timeline__meta">DEFCON 34</p>
+  </li>
+  <li class="timeline__item">
+    <span class="timeline__date">May 19, 2025</span>
+    <p class="timeline__title"><a href="https://news.uci.edu/2025/05/19/uc-irvine-team-wins-national-collegiate-cyber-defense-competition/">UC Irvine team wins National Collegiate Cyber Defense Competition</a></p>
+    <p class="timeline__desc">Competed on the UCI CCDC team as the corporate lead.</p>
+    <p class="timeline__meta">UC Irvine News</p>
+  </li>
+  <li class="timeline__item">
     <span class="timeline__date">Mar. 19, 2025</span>
     <p class="timeline__title"><a href="https://www.oit.uci.edu/2025/03/19/cybersecurity-zotgpt-collab/">Securing the Future: ZotGPT and Cyber@UCI Unite to Fortify Generative AI Defenses</a></p>
     <p class="timeline__desc">Set up and facilitated this collaboration, managing the student team and keeping UCI OIT updated throughout.</p>
@@ -42,21 +54,25 @@ Hi! I'm a 4th-year software engineering Ph.D. student at University of Californi
     <p class="timeline__desc">Competed as a member of Cyber@UCI's CCDC team at National CCDC Nationals.</p>
     <p class="timeline__meta">UC Irvine News</p>
   </li>
-  <li class="timeline__item">
-    <span class="timeline__date">Apr. 18, 2024</span>
-    <p class="timeline__title"><a href="https://ics.uci.edu/2024/04/18/uci-advances-to-national-collegiate-cyber-defense-competition/">UCI Advances to National Collegiate Cyber Defense Competition</a></p>
-    <p class="timeline__desc">Competed as a member of Cyber@UCI's CCDC team in the WRCCDC Regionals that earned this advancement.</p>
-    <p class="timeline__meta">UCI Donald Bren School of Information &amp; Computer Sciences</p>
-  </li>
 </ul>
 
 <br>
 
 ## Selected Publications
 
+<ul class="pub-list">
 {% for post in site.publications reversed limit:3 %}
-  {% include archive-single.html %}
+  {% if post.id %}
+    {% assign pub_title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+  {% else %}
+    {% assign pub_title = post.title %}
+  {% endif %}
+  <li class="pub-list__item">
+    <p class="pub-list__title"><a href="{{ post.link | default: post.url }}">{{ pub_title }}</a></p>
+    <p class="pub-list__meta">Published in <i>{{ post.venue }}</i>{% if post.acceptance_rate %}, ~{{ post.acceptance_rate }} acceptance rate{% else %}, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}</p>
+  </li>
 {% endfor %}
+</ul>
 
 *See all [publications](/publications/).*
 

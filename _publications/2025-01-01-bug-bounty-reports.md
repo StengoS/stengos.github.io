@@ -6,6 +6,7 @@ permalink: /publication/2025-bug-bounty-reports
 excerpt: ""
 date: 2025-01-01
 venue: 'IEEE Symposium on Security and Privacy (S&P) 2025'
+acceptance_rate: '14.3%'
 link: 'https://ieeexplore.ieee.org/document/11023456'
 paperurl:
 citation:
