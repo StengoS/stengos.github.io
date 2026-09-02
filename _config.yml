@@ -24,7 +24,8 @@ author:
   # Biographic information
   avatar           : "pfp_everything_v2.PNG"
   name             : "Steven Ngo"
-  pronouns         : "he/him/his" 
+  handle           : "stengo"
+  pronouns         : "he/him/his"
   bio              : "Software Engineering Ph.D. Student @ UC Irvine, Informatics Dept"
   location         : "Irvine, CA"
   employer         : "UCI Informatics Dept"
@@ -263,7 +264,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _portfolio
   - scope:

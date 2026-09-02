@@ -134,6 +134,12 @@
   }
 }
 
+.author__handle {
+  margin: 0;
+  color: var(--global-text-color-light);
+  font-size: $type-size-6;
+}
+
 .author__pronouns {
   margin: 0;
 

@@ -1,0 +1,97 @@
+/* ==========================================================================
+   ACCORDION
+   (expandable/collapsible project entries, e.g. Undergraduate Research)
+   ========================================================================== */
+
+.accordion {
+  margin: 1.5em 0 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85em;
+}
+
+.accordion__item {
+  border: 1px solid var(--global-border-color);
+  border-radius: $border-radius;
+  box-shadow: var(--global-box-shadow);
+  overflow: hidden;
+  transition: $global-transition;
+
+  &[open] {
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+  }
+}
+
+.accordion__summary {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 1em 1.25em;
+  cursor: pointer;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &::marker {
+    content: "";
+  }
+
+  &:hover {
+    background: var(--global-code-bg-color, rgba(0, 0, 0, 0.03));
+  }
+}
+
+.accordion__heading {
+  flex: 1 1 auto;
+}
+
+.accordion__title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.accordion__date {
+  display: block;
+  margin-top: 0.35em;
+  font-family: $sans-serif-narrow;
+  font-size: $type-size-7;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--global-text-color-light);
+}
+
+.accordion__personnel {
+  margin: 0.25em 0 0;
+  font-size: $type-size-6;
+  font-style: italic;
+  color: var(--global-text-color-light);
+}
+
+.accordion__icon {
+  flex: 0 0 auto;
+  margin-top: 0.15em;
+  color: var(--global-text-color-light);
+  transition: transform 0.2s ease;
+}
+
+.accordion__item[open] > .accordion__summary .accordion__icon {
+  transform: rotate(180deg);
+}
+
+.accordion__body {
+  padding: 0 1.25em 1.25em;
+  border-top: 1px solid var(--global-border-color);
+  padding-top: 1em;
+
+  p {
+    margin: 0 0 1em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+/* ==========================================================================
+   INTEREST GRID
+   (icon tiles for Research Interests)
+   ========================================================================== */
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1em;
+  margin: 1.5em 0 2em;
+}
+
+.interest-card {
+  padding: 1.35em 1.25em;
+  border: 1px solid var(--global-border-color);
+  border-radius: $border-radius;
+  box-shadow: var(--global-box-shadow);
+  transition: $global-transition;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+  }
+}
+
+.interest-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5em;
+  height: 2.5em;
+  margin-bottom: 0.75em;
+  border-radius: 50%;
+  background: var(--global-code-background-color);
+  color: var(--global-link-color);
+  font-size: 1.1em;
+}
+
+.interest-card__title {
+  margin: 0 0 0.35em;
+  font-weight: 600;
+}
+
+.interest-card__desc {
+  margin: 0;
+  font-size: $type-size-6;
+  color: var(--global-text-color-light);
+}

@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: "Home"
 author_profile: true
 redirect_from: 
   - /about/
@@ -10,15 +9,31 @@ redirect_from:
 Hi! I'm a 4th-year software engineering Ph.D. student at University of California, Irvine (UCI)'s [Informatics Department](https://www.informatics.uci.edu/). I am advised by [Dr. Joshua Garcia](https://jgarcia.ics.uci.edu/). 
 
 <br>
-<br>
 
 ## Research Interests
-- Software Security - threat modeling, secure software development, open-source software
-- CS Education - software engineering & security education, AI in education
-- AI & Security - AI red teaming
 
-<br>
-<br>
+<div class="interest-grid">
+
+  <div class="interest-card">
+    <div class="interest-card__icon"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i></div>
+    <p class="interest-card__title">CS Education</p>
+    <p class="interest-card__desc">Student-run cybersecurity clubs, upcycled cyber ranges</p>
+  </div>
+
+  <div class="interest-card">
+    <div class="interest-card__icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+    <p class="interest-card__title">Software Security</p>
+    <p class="interest-card__desc">Bug bounties, CVEs, and open-source maintainers</p>
+  </div>
+
+  <div class="interest-card">
+    <div class="interest-card__icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+    <p class="interest-card__title">AI &amp; Security</p>
+    <p class="interest-card__desc">AI red teaming, AI security education</p>
+  </div>
+
+</div>
+
 <br>
 
 ## Recent Highlights
@@ -69,14 +84,17 @@ Hi! I'm a 4th-year software engineering Ph.D. student at University of Californi
   {% endif %}
   <li class="pub-list__item">
     <p class="pub-list__title"><a href="{{ post.link | default: post.url }}">{{ pub_title }}</a></p>
+    {% if post.forthcoming %}
+    <p class="pub-list__meta">To appear in <i>{{ post.venue }}</i></p>
+    {% else %}
     <p class="pub-list__meta">Published in <i>{{ post.venue }}</i>{% if post.acceptance_rate %}, ~{{ post.acceptance_rate }} acceptance rate{% else %}, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}</p>
+    {% endif %}
   </li>
 {% endfor %}
 </ul>
 
 *See all [publications](/publications/).*
 
-<br>
 <br>
 
 I may not always be available for collaboration, but please don't hesitate to reach out if any of my work is of interest or if you would just like to work together. Please also feel free to reach out if you have any questions or just want to chat!
