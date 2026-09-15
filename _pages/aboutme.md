@@ -7,7 +7,7 @@ permalink: /about-me/
 * Ph.D. in Software Engineering, Informatics Department, University of California, Irvine (2023 - present)
 * B.S. in Software Engineering, minor in Psychology from California Polytechnic State University, San Luis Obispo (2019 - 2023)
 
-## Highlighted Accomplishments
+## Highlights
 
 <ul class="timeline">
   <li class="timeline__item">
@@ -82,5 +82,4 @@ I actively compete with [Cyber@UCI's Collegiate Cyber Defense Competition](https
 
 <figure style="width: 320px" class="align-center">
   <img src="/images/honey-sink-wisdom.jpg" alt="Honey the cat perched in a bathroom sink.">
-  <figcaption>Honey, contemplating the wisdom of the sink.</figcaption>
 </figure>

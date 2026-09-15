@@ -40,6 +40,12 @@ Hi! I'm a 4th-year software engineering Ph.D. student at University of Californi
 
 <ul class="timeline">
   <li class="timeline__item">
+    <span class="timeline__date">Sep. 14, 2026</span>
+    <p class="timeline__title">Netsiege: A Long-Form, Club-Led King-of-the-Hill Competition for Accessible Cybersecurity Training</p>
+    <p class="timeline__desc">Paper accepted to SIGCSE 2027 (~25.8% acceptance rate).</p>
+    <p class="timeline__meta">ACM Technical Symposium on Computer Science Education (SIGCSE) 2027</p>
+  </li>
+  <li class="timeline__item">
     <span class="timeline__date">Aug. 7, 2026</span>
     <p class="timeline__title"><a href="https://info.defcon.org/defcon34/content/68125">Student-Run Cyber Clubs - Why They Matter &amp; Digital Playgrounds</a></p>
     <p class="timeline__desc">Gave a presentation on cyber clubs at DEFCON 34 to the .EDU Community.</p>
@@ -48,7 +54,7 @@ Hi! I'm a 4th-year software engineering Ph.D. student at University of Californi
   <li class="timeline__item">
     <span class="timeline__date">May 19, 2025</span>
     <p class="timeline__title"><a href="https://news.uci.edu/2025/05/19/uc-irvine-team-wins-national-collegiate-cyber-defense-competition/">UC Irvine team wins National Collegiate Cyber Defense Competition</a></p>
-    <p class="timeline__desc">Competed on the UCI CCDC team as the corporate lead.</p>
+    <p class="timeline__desc">Competed as the corporate lead of Cyber@UCI's CCDC team, where we won 1st at Nationals!</p>
     <p class="timeline__meta">UC Irvine News</p>
   </li>
   <li class="timeline__item">
@@ -85,7 +91,7 @@ Hi! I'm a 4th-year software engineering Ph.D. student at University of Californi
   <li class="pub-list__item">
     <p class="pub-list__title"><a href="{{ post.link | default: post.url }}">{{ pub_title }}</a></p>
     {% if post.forthcoming %}
-    <p class="pub-list__meta">To appear in <i>{{ post.venue }}</i></p>
+    <p class="pub-list__meta">To appear in <i>{{ post.venue }}</i>{% if post.acceptance_rate %}, ~{{ post.acceptance_rate }} acceptance rate{% endif %}</p>
     {% else %}
     <p class="pub-list__meta">Published in <i>{{ post.venue }}</i>{% if post.acceptance_rate %}, ~{{ post.acceptance_rate }} acceptance rate{% else %}, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}</p>
     {% endif %}

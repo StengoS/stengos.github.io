@@ -42,7 +42,7 @@
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
           {% if post.forthcoming %}
-            <p>To appear in <i>{{ post.venue }}</i></p>
+            <p>To appear in <i>{{ post.venue }}</i>{% if post.acceptance_rate %}, ~{{ post.acceptance_rate }} acceptance rate{% endif %}</p>
           {% elsif post.acceptance_rate %}
             <p>Published in <i>{{ post.venue }}</i>, ~{{ post.acceptance_rate }} acceptance rate</p>
           {% else %}
